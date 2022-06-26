@@ -34,3 +34,18 @@ const result = filterArray(array, false, undefined, '', 0, null);
 
 console.log(result);
 
+
+/*
+3) Напишите функцию calcSum, которая вернет сумму всех входящих параметров функции.
+
+let sum1 = calcSum(0); // 0
+let sum1 = calcSum(1,2,3); // 6
+let sum1 = calcSum(5,0,10, 1, 5); // 21
+
+*/
+
+function calcSum(...args) {
+    return args.reduce((count, el) => count + el);
+}
+
+console.log(calcSum(5,0,10, 1, 5));
