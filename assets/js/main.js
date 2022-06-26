@@ -72,5 +72,16 @@ const pipeFunction = createPipe();
 pipeFunction('some text you like');
 
 
+/*
+5) Создайте функцию, которая принемает 2а аругемнта, текст и функцию для его вывода
+вызовете ее дважды таким образом, чтобы в первый раз выво строки был в консоль, а второй раз в алерте.
+*/
 
+function output(text, func) {
+    func(text);
+}
 
+const someText = 'some text';
+
+output(someText, console.log);
+output(someText, alert);
