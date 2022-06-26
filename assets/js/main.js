@@ -23,7 +23,7 @@ let result = filterArray(array, false, undefined, '', 0, null);
 // result - [1,2, 'qwerty'];
 */
 
-let array = [0, 1, 2, null, undefined, 'qwerty', false];
+const array = [0, 1, 2, null, undefined, 'qwerty', false];
 
 function filterArray(array, ...args) {
     args.forEach(argument => array = array.filter(el => el !== argument));
