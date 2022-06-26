@@ -49,3 +49,28 @@ function calcSum(...args) {
 }
 
 console.log(calcSum(5,0,10, 1, 5));
+
+
+/*
+4) Напишите функцию декортор, которая будет выводить все данные ей строки добавля в начлч и в конец строку: =====
+
+как должен выглядить код:
+
+createPipe - то что вы должны реализовать
+
+const pipeFunction = createPipe();
+pipeFunction('some text you like');
+// output: ===== 'some text you like' =====
+*/
+
+function createPipe() {
+    const prePostFix = '=====';
+    return (string) => console.log(`${prePostFix} '${string}' ${prePostFix}`)
+}
+
+const pipeFunction = createPipe();
+pipeFunction('some text you like');
+
+
+
+
